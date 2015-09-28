@@ -15,6 +15,8 @@ public class array {
                 
             }
             System.out.println(i+ " = " + strDarstellung);
+            
+            System.out.println("TEST");
         }
             
         
