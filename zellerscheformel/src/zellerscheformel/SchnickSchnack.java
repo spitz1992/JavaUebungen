@@ -32,7 +32,7 @@ public class SchnickSchnack {
 
 		}
 		String sUserEingabe = JOptionPane.showInputDialog(
-				"Bitte geben Sie P fÃ¼r Papier, S fÃ¼r Schere, K fÃ¼r Kieselstein und Q fÃ¼r Quit (abbrechen) ein");
+				"Bitte geben Sie P für Papier, S für Schere, K für Kieselstein und Q für Quit (abbrechen) ein");
 
 		if (sUserEingabe == sZufallswert) {
 			System.out.println("Unentschieden");

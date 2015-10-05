@@ -17,18 +17,18 @@ System.out.println(iZufallszahl);
 		do {
 
 			String sUsereingabe = JOptionPane
-					.showInputDialog("Bitte geben Sie eine Zahl zwischen 1 und 1000 ein (0 f√ºr Abbruch");
+					.showInputDialog("Bitte geben Sie eine Zahl zwischen 1 und 1000 ein (0 f¸r Abbruch)");
 			iUsereingabe = Integer.parseInt(sUsereingabe);
 
 			if (iUsereingabe == 0) {
 				System.out.println("Schade! Es w√§re die " + iZufallszahl + " gewesen!");
 			} else if (iUsereingabe == iZufallszahl) {
 				// TODO: Anzahl der Versuche anzeigen
-				System.out.println("Gl√ºckwunsch Sie haben mit " + iVersuche + " Versuchen die Zahl richtig erraten");
+				System.out.println("Gluekwunsch Sie haben mit " + iVersuche + " Versuchen die Zahl richtig erraten");
 			} else if (iUsereingabe < iZufallszahl) {
 				System.out.println("Eingegebene Zahl ist kleiner als Zufallszahl");
 			} else {
-				System.out.println("Eingegebene Zahl ist gr√∂√üer als Zufallzahl");
+				System.out.println("Eingegebene Zahl ist grˆﬂer als Zufallzahl");
 			}
 			
 			iVersuche ++;
