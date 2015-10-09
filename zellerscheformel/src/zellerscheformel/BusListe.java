@@ -48,7 +48,9 @@ public class BusListe
 		
 		//Ausgabe
 		
-		boolean b = true;
+
+		  boolean b = true;
+		
 		while (b) {
 			String sSuchmodus = JOptionPane.showInputDialog("Welchen Modus möchten Sie verwenden (S oder P)");
 		
@@ -132,5 +134,6 @@ public class BusListe
 				b = false;
 		}
 	}
+
 }
 	
