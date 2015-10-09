@@ -39,7 +39,7 @@ public class zellersche {
 		if(iWochentag % 7 >= 0){
 			iWochentag = iWochentag % 7;
 		} else {
-			iWochentag = 7 - Math.abs(iWochentag % 7);
+			iWochentag = 7 - iWochentag % 7;
 		}
 		switch (iWochentag)
 		{
