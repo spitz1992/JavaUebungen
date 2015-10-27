@@ -13,6 +13,7 @@ public class zellersche {
 		int iTag = 0;
 		
 		
+		
 		sEingabeUserTag = JOptionPane.showInputDialog ("Eingabe Datum Tag");
 		sEingabeUserMonat = JOptionPane.showInputDialog ("Eingabe Datum Monat");
 		sEingabeUserJahr = JOptionPane.showInputDialog ("Eingabe Datum Jahr");

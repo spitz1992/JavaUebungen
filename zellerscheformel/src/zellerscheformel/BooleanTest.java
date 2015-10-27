@@ -6,7 +6,7 @@ public class BooleanTest {
 
 	public static void main(String[] args) {
 		String [] sEingabe = new String [2];
-		double [] dEingabe = new double [2];
+		double [] dEingabe = new double [sEingabe.length];
 		
 		for (int i = 0; i<sEingabe.length; i++) {
 			sEingabe [i] = JOptionPane.showInputDialog("Bitte geben Sie eine Zahl ein");
