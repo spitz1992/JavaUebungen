@@ -1,0 +1,83 @@
+import javax.swing.JOptionPane;
+
+public class Feiertagsberechnung {
+	
+	public static void main (String [] args)
+	{
+		for (int iJahr = 2015; iJahr <2026; iJahr++) {
+			System.out.println("\n----------Feiertage für das Jahr " + iJahr +"----------");
+			System.out.println("Neujahr\t\t\t\t" + wochentag(1,1,iJahr) +iJahr);
+			System.out.println("Heilig drei König\t\t" + wochentag(6,1,iJahr) +iJahr);
+			System.out.println("Tag der Arbeit\t\t\t" + wochentag(1,5,iJahr) +iJahr);
+			System.out.println("Friedensfest\t\t\t" + wochentag(8,8,iJahr) +iJahr);
+			System.out.println("Maria Himmelfahrt\t\t" + wochentag(15,8,iJahr) +iJahr);
+			System.out.println("Tag der Deutschen Einheit\t" + wochentag(3,10,iJahr) +iJahr);
+			System.out.println("Allerheiligen\t\t\t" + wochentag(1,11,iJahr) +iJahr);
+			System.out.println("Heiligabend\t\t\t" + wochentag(24,12,iJahr) +iJahr);
+			System.out.println("Erster Weihnachtstag\t\t" + wochentag(25,12,iJahr) +iJahr);
+			System.out.println("Zweiter Weihnachtstag\t\t" + wochentag(26,12,iJahr) +iJahr);
+			System.out.println("Silvester\t\t\t" + wochentag(31,12,iJahr) +iJahr);
+		}
+	
+
+	}
+
+	public static String wochentag(int iTag, int iMonat, int iJahreszahl) {
+
+		int iHundert = 0;
+		String tag = "";
+
+		iHundert = iJahreszahl / 100;
+		iJahreszahl = iJahreszahl % 100;
+
+		if (iMonat < 3) {
+			iMonat = iMonat + 10;
+			if (iJahreszahl == 0) {
+				iJahreszahl = 99;
+				iHundert = iHundert - 1;
+			} else {
+				iJahreszahl = iJahreszahl - 1;
+			}
+		} else {
+			iMonat = iMonat - 2;
+		}
+		int iWochentag = (iTag + (int) (2.61 * iMonat - 0.2) + iJahreszahl
+				+ (int) (iJahreszahl / 4) + (int) (iHundert / 4) - 2 * iHundert);
+		if (iWochentag % 7 >= 0) {
+			iWochentag = iWochentag % 7;
+		} else {
+			iWochentag = 7 - Math.abs(iWochentag % 7);
+		}
+		switch (iWochentag) {
+		case 0:
+			tag = "Sonntag\t\t";
+			break;
+
+		case 1:
+			tag = "Montag\t\t";
+			break;
+
+		case 2:
+			tag = "Dienstag\t";
+			break;
+
+		case 3:
+			tag = "Mittwoch\t";
+			break;
+
+		case 4:
+			tag = "Donnerstag\t";
+			break;
+
+		case 5:
+			tag = "Freitag\t\t";
+			break;
+
+		case 6:
+			tag = "Samstag\t\t";
+			break;
+		}
+		return tag;
+	}
+		
+}
