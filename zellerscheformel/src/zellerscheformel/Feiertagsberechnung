@@ -81,3 +81,47 @@ public class Feiertagsberechnung {
 	}
 		
 }
+
+/* String datum " ";
+ * int gesamttage = 0;
+ * 
+ * gesamsamttage = gesamttage + differenz;
+ * if (ostermonat == 3)
+ * {
+ * 	gesamttage = gesamttage + 31 + 28 + ostertag;
+ * }
+ * else
+ * {
+ * 	gesamttage = gesamttage + 31 + 28 + 31 + ostertag;
+ * }
+ * Hier habe ich jetzt die Gesamttage, die der Feiertag vom 1.1. entfernt ist ermittelt
+ * 
+ * gesamttage = gesamttage -31;
+ * 
+ * if (gesamttage <=28 && gesamttage > 0)
+ * {
+ * 	datum = gesamttage + ". Februar\t;
+ * }
+ * gesamttage = gesamttage - 28;
+ * 
+ * if (gesamttage <= 31 && gesamttage > 0)
+ * {
+ * 	datum = gesamttage + ". März\t;
+ * }
+ * 
+ * if (gesamttage <= 30 && gesamttage > 0)
+ * {
+ * 	datum = gesamttage + ". April\t;
+ * }
+ * 
+ * if (gesamttage <= 31 && gesamttage > 0)
+ * {
+ * 	datum = gesamttage + ". Mai\t;
+ * }
+ * 
+ * if (gesamttage <= 30 && gesamttage > 0)
+ * {
+ * 	datum = gesamttage + ". Juni\t;
+ * }
+ * 		
+ */
